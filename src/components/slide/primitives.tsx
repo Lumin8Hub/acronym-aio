@@ -74,7 +74,7 @@ export function SectionPill({ children }: { children: ReactNode }) {
 export function FooterChrome({ slideNumber, total }: { slideNumber: number; total: number }) {
   return (
     <div className="absolute bottom-6 left-20 right-20 flex justify-between items-baseline text-[10px] tracking-[0.12em] uppercase text-muted font-mono z-10 pointer-events-none">
-      <span>Privileged &amp; Confidential</span>
+      <span />
       <span>{String(slideNumber).padStart(2, "0")} / {String(total).padStart(2, "0")}</span>
     </div>
   );
