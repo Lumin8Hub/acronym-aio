@@ -230,20 +230,7 @@ export function Slide04({ slideNumber }: SlideProps) {
         "Align content with high-value queries",
         "Convert visibility into pipeline",
       ]}
-      visualOverlay={
-        <div className="absolute left-0 top-0 bottom-0 w-1/2 pointer-events-none" aria-hidden="true">
-          <svg viewBox="0 0 100 100" preserveAspectRatio="xMidYMid meet" className="absolute inset-0 w-full h-full">
-            {[
-              [18, 22], [32, 18], [12, 38], [42, 30], [25, 50], [38, 60],
-              [52, 22], [58, 50], [22, 70], [40, 80], [55, 75], [10, 60],
-            ].map(([x, y], i) => (
-              <circle key={i} cx={x} cy={y} r={0.6} fill="#00FFFF" opacity="0.6">
-                <animate attributeName="opacity" values="0.3;0.9;0.3" dur={`${3 + (i % 4)}s`} repeatCount="indefinite" />
-              </circle>
-            ))}
-          </svg>
-        </div>
-      }
+      visualOverlay={null}
     />
   );
 }
