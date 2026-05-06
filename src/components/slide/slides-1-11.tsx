@@ -87,6 +87,7 @@ export function Slide02({ slideNumber }: SlideProps) {
       titleLight="From SEO to"
       titleBold="AI discovery."
       subtitle="Search is evolving. Visibility is being redefined."
+      caption="SERP — Search Engine Results Page"
     >
       <div className="flex flex-col gap-7 h-full">
         <div>
