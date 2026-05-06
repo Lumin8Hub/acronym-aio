@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import {
-  HelpCircle, Tag, FileText, Sparkles, Database, Globe, Target, CheckCircle2,
+  HelpCircle, Tag, FileText, Sparkles, Database, Globe, Target, CheckCircle2, Handshake,
   Landmark, Wifi, LineChart,
 } from "lucide-react";
 import { AMark, EdgeStrip, FooterChrome, GradientRule, Wordmark } from "./primitives";
@@ -462,6 +462,7 @@ export function Slide11({ slideNumber }: SlideProps) {
             { label: "AI Discovery", icon: Sparkles, caption: "LLM citations" },
             { label: "Website", icon: Globe, caption: "Personalized landing" },
             { label: "Sales Trigger", icon: Target, caption: "Account scoring" },
+            { label: "Sales Conversion", icon: Handshake, caption: "Engaged buyer" },
             { label: "Deal", icon: CheckCircle2, caption: "Closed-won" },
           ]}
         />
