@@ -1,3 +1,4 @@
+import type React from "react";
 import {
   Slide01, Slide02, Slide03, Slide04, Slide05, Slide06, Slide07, Slide08, Slide09, Slide10, Slide11,
 } from "./slides-1-11";
@@ -10,7 +11,7 @@ export type SlideEntry = {
   id: number;
   title: string;
   blurb: string;
-  Component: (p: SlideProps) => JSX.Element;
+  Component: (p: SlideProps) => React.ReactElement;
 };
 
 export const SLIDES: SlideEntry[] = [
