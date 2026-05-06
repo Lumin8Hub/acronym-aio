@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import {
   HelpCircle, Tag, FileText, Sparkles, Database, Globe, Target, CheckCircle2,
-  Landmark, Wifi, Network, LineChart,
+  Landmark, Wifi, LineChart,
 } from "lucide-react";
 import { AMark, EdgeStrip, FooterChrome, GradientRule, Wordmark } from "./primitives";
 import networkMap from "@/assets/acronym-network-map.png";
@@ -398,7 +398,7 @@ export function Slide09({ slideNumber }: SlideProps) {
   return (
     <CenterpieceLayout
       slideNumber={slideNumber}
-      sectionPill="Priority Sectors 02–05"
+      sectionPill="Priority Sectors 02–04"
       titleLight="Three"
       titleBold="follow-on verticals."
       subtitle="Sequenced by content readiness and sales alignment."
