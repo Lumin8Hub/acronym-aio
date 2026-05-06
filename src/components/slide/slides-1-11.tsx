@@ -4,6 +4,7 @@ import {
   Landmark, Wifi, Network, LineChart,
 } from "lucide-react";
 import { AMark, EdgeStrip, FooterChrome, GradientRule, Wordmark } from "./primitives";
+import networkMap from "@/assets/acronym-network-map.png";
 import { ContentLayout, DividerLayout, CenterpieceLayout, SlideFrame, type SlideProps } from "./layouts";
 import { FunnelDiagram, SectorPillar } from "./parts";
 
