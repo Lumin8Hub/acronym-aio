@@ -30,8 +30,10 @@ jobs:
       - name: Build static SPA
         run: bunx vite build --config vite.pages.config.ts
 
-      - name: SPA fallback (404 -> index.html)
-        run: cp dist-pages/index.html dist-pages/404.html
+      - name: SPA fallback + Jekyll bypass
+        run: |
+          cp dist-pages/index.html dist-pages/404.html
+          touch dist-pages/.nojekyll
 
       - uses: actions/configure-pages@v5
 
