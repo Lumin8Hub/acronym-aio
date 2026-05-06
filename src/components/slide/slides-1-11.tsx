@@ -371,13 +371,6 @@ export function Slide07({ slideNumber }: SlideProps) {
 
 /* ─── Slide 08 — Energy & Utilities (Layout C) ──────────────────────────── */
 export function Slide08({ slideNumber }: SlideProps) {
-  const hubs = [
-    { x: 50, y: 70, name: "Toronto" },
-    { x: 65, y: 60, name: "Ottawa" },
-    { x: 42, y: 75, name: "London" },
-    { x: 55, y: 45, name: "Sudbury" },
-    { x: 25, y: 35, name: "Thunder Bay" },
-  ];
   return (
     <ContentLayout
       slideNumber={slideNumber}
