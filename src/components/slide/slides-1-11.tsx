@@ -21,7 +21,7 @@ export function Slide01({ slideNumber }: SlideProps) {
           <h1 className="font-display font-light text-[56px] leading-[0.96] tracking-[0.03em] uppercase text-teal-900">
             Acronym AIO Strategy 2.0:
             <br />
-            <span className="font-bold">From content to AI-driven revenue engine.</span>
+            <span className="font-light text-[36px]">From content to AI-driven revenue engine.</span>
           </h1>
           <p className="mt-8 text-[18px] text-teal-800 max-w-[42ch] leading-[1.5]">
             Sector-specific growth powered by Utopica + AI systems.
