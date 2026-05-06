@@ -406,11 +406,11 @@ export function Slide09({ slideNumber }: SlideProps) {
       <div className="grid grid-cols-4 gap-4 h-full">
         <SectorPillar
           index="02" name="Public Sector" icon={Landmark} accent="#CFFF1D"
-          bullets={["Federal departments", "Provincial agencies", "Municipal infrastructure"]}
+          bullets={["Policy changes", "Legislation relevant information", "Financial & budgetary resources"]}
         />
         <SectorPillar
-          index="03" name="ISPs" icon={Wifi} accent="#00B8B8"
-          bullets={["Independent of Bell, Rogers, Telus", "Wholesale connectivity needs", "Regional coverage gaps"]}
+          index="03" name="ISP's" icon={Wifi} accent="#00B8B8"
+          bullets={["Residential coverage (from city to remote locations)", "Wholesale connectivity needs", "Importance of partnerships"]}
         />
         <SectorPillar
           index="04" name="Wholesale & Resellers" icon={Network} accent="#65038E"
@@ -418,7 +418,7 @@ export function Slide09({ slideNumber }: SlideProps) {
         />
         <SectorPillar
           index="05" name="Capital Markets" icon={LineChart} accent="#1B2D5B"
-          bullets={["Toronto Stock Exchange", "New York Stock Exchange", "Low-latency requirements"]}
+          bullets={["US-Canada expansion", "Important insights for the financial sector"]}
         />
       </div>
     </CenterpieceLayout>
