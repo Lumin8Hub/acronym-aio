@@ -453,7 +453,7 @@ export function Slide11({ slideNumber }: SlideProps) {
       sectionPill="The Engine"
       titleLight="The"
       titleBold="AIO revenue engine."
-      subtitle="Five connected stages. One end-to-end pipeline."
+      subtitle="Six connected stages. One end-to-end pipeline."
     >
       <div className="h-full flex items-center">
         <FunnelDiagram
