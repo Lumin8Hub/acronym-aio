@@ -399,11 +399,11 @@ export function Slide09({ slideNumber }: SlideProps) {
     <CenterpieceLayout
       slideNumber={slideNumber}
       sectionPill="Priority Sectors 02–05"
-      titleLight="Four"
+      titleLight="Three"
       titleBold="follow-on verticals."
       subtitle="Sequenced by content readiness and sales alignment."
     >
-      <div className="grid grid-cols-4 gap-4 h-full">
+      <div className="grid grid-cols-3 gap-6 h-full max-w-[85%] mx-auto">
         <SectorPillar
           index="02" name="Public Sector" icon={Landmark} accent="#CFFF1D"
           bullets={["Policy changes", "Legislation relevant information", "Financial & budgetary resources"]}
@@ -413,11 +413,7 @@ export function Slide09({ slideNumber }: SlideProps) {
           bullets={["Residential coverage (from city to remote locations)", "Wholesale connectivity needs", "Importance of partnerships"]}
         />
         <SectorPillar
-          index="04" name="Wholesale & Resellers" icon={Network} accent="#65038E"
-          bullets={["Carrier-of-carriers offers", "Capacity resale partners", "White-label fiber routes"]}
-        />
-        <SectorPillar
-          index="05" name="Capital Markets" icon={LineChart} accent="#1B2D5B"
+          index="04" name="Capital Markets" icon={LineChart} accent="#1B2D5B"
           bullets={["US-Canada expansion", "Important insights for the financial sector"]}
         />
       </div>
