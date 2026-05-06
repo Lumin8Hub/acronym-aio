@@ -19,7 +19,7 @@ export function Slide12({ slideNumber }: SlideProps) {
       slideNumber={slideNumber}
       sectionPill="Layer 02 · Website"
       titleLight="One site,"
-      titleBold="three sectors."
+      titleBold="4 sectors."
       subHeader="Real-time personalization by industry, identity, and behavior."
       bullets={[
         { head: "Dynamic headlines", body: "Lead message changes per visitor segment." },
