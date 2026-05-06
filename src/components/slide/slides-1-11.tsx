@@ -4,6 +4,7 @@ import {
   Landmark, Wifi, Network, LineChart,
 } from "lucide-react";
 import { AMark, EdgeStrip, FooterChrome, GradientRule, Wordmark } from "./primitives";
+import networkMap from "@/assets/acronym-network-map.png";
 import { ContentLayout, DividerLayout, CenterpieceLayout, SlideFrame, type SlideProps } from "./layouts";
 import { FunnelDiagram, SectorPillar } from "./parts";
 
@@ -370,13 +371,6 @@ export function Slide07({ slideNumber }: SlideProps) {
 
 /* ─── Slide 08 — Energy & Utilities (Layout C) ──────────────────────────── */
 export function Slide08({ slideNumber }: SlideProps) {
-  const hubs = [
-    { x: 50, y: 70, name: "Toronto" },
-    { x: 65, y: 60, name: "Ottawa" },
-    { x: 42, y: 75, name: "London" },
-    { x: 55, y: 45, name: "Sudbury" },
-    { x: 25, y: 35, name: "Thunder Bay" },
-  ];
   return (
     <ContentLayout
       slideNumber={slideNumber}
@@ -391,35 +385,8 @@ export function Slide08({ slideNumber }: SlideProps) {
         { head: "Sales readiness", body: "Field team already operational in this segment." },
       ]}
       visual={
-        <div className="absolute inset-0 p-8">
-          <svg viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
-            <path
-              d="M10,40 L20,30 L35,28 L50,32 L60,28 L72,35 L78,42 L75,55 L68,68 L58,78 L48,80 L38,78 L28,72 L18,62 L12,52 Z"
-              fill="rgba(19,82,100,0.08)"
-              stroke="#135264"
-              strokeWidth="0.6"
-            />
-            {hubs.map((h, i) => (
-              hubs.slice(i + 1).map((h2, j) => (
-                <line key={`${i}-${j}`} x1={h.x} y1={h.y} x2={h2.x} y2={h2.y}
-                  stroke="url(#fiber-grad)" strokeWidth="0.4" strokeOpacity="0.55" />
-              ))
-            ))}
-            <defs>
-              <linearGradient id="fiber-grad" x1="0" x2="1">
-                <stop offset="0%" stopColor="#00E0FF" />
-                <stop offset="100%" stopColor="#CFFF1D" />
-              </linearGradient>
-            </defs>
-            {hubs.map((h) => (
-              <g key={h.name}>
-                <circle cx={h.x} cy={h.y} r="2" fill="#CFFF1D" stroke="#022C37" strokeWidth="0.4" />
-                <text x={h.x + 3} y={h.y + 1} fontSize="2.6" fill="#022C37" fontFamily="Barlow" fontWeight="700">
-                  {h.name}
-                </text>
-              </g>
-            ))}
-          </svg>
+        <div className="absolute inset-0 flex items-center justify-center p-6">
+          <img src={networkMap} alt="Acronym Network map" className="w-full h-full object-contain" />
         </div>
       }
     />
@@ -474,49 +441,8 @@ export function Slide10({ slideNumber }: SlideProps) {
         { head: "Mission-critical uptime", body: "Carrier-grade SLAs across the footprint." },
       ]}
       visual={
-        <div className="absolute inset-0 p-6">
-          <svg viewBox="0 0 100 100" className="w-full h-full" preserveAspectRatio="xMidYMid meet">
-            <defs>
-              <linearGradient id="route-grad" x1="0" x2="1">
-                <stop offset="0%" stopColor="#00E0FF" />
-                <stop offset="50%" stopColor="#7A3F9F" />
-                <stop offset="100%" stopColor="#CFFF1D" />
-              </linearGradient>
-            </defs>
-            <path
-              d="M5,40 L20,30 L35,28 L50,32 L65,28 L80,38 L88,50 L82,65 L70,75 L55,80 L40,78 L25,72 L10,55 Z"
-              fill="rgba(19,82,100,0.06)" stroke="#135264" strokeWidth="0.5"
-            />
-            {/* Routes */}
-            <line x1="42" y1="58" x2="62" y2="55" stroke="url(#route-grad)" strokeWidth="1.4" />
-            <line x1="42" y1="58" x2="35" y2="62" stroke="url(#route-grad)" strokeWidth="1.4" />
-            <line x1="42" y1="58" x2="78" y2="40" stroke="url(#route-grad)" strokeWidth="1.4" strokeDasharray="2,1.5" />
-            {[
-              { x: 42, y: 58, n: "Ontario" },
-              { x: 35, y: 62, n: "Sarnia" },
-              { x: 62, y: 55, n: "New Jersey" },
-              { x: 78, y: 40, n: "Chicago" },
-            ].map((c) => (
-              <g key={c.n}>
-                <circle cx={c.x} cy={c.y} r="1.6" fill="#022C37" />
-                <text x={c.x + 2.5} y={c.y - 1} fontSize="2.6" fill="#022C37" fontFamily="Barlow" fontWeight="700">
-                  {c.n}
-                </text>
-              </g>
-            ))}
-            {[
-              { x: 50, y: 50, t: "<2ms" },
-              { x: 53, y: 64, t: "<8ms" },
-              { x: 70, y: 46, t: "<14ms" },
-            ].map((p, i) => (
-              <g key={i}>
-                <rect x={p.x - 4.5} y={p.y - 1.8} width="9" height="3.6" fill="#CFFF1D" stroke="#022C37" strokeWidth="0.2" rx="1.8" />
-                <text x={p.x} y={p.y + 0.7} fontSize="2.2" fill="#022C37" fontFamily="JetBrains Mono" fontWeight="500" textAnchor="middle">
-                  {p.t}
-                </text>
-              </g>
-            ))}
-          </svg>
+        <div className="absolute inset-0 flex items-center justify-center p-6">
+          <img src={networkMap} alt="Acronym Network map" className="w-full h-full object-contain" />
         </div>
       }
     />
