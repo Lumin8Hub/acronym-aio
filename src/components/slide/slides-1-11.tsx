@@ -409,7 +409,7 @@ export function Slide09({ slideNumber }: SlideProps) {
           bullets={["Policy changes", "Legislation relevant information", "Financial & budgetary resources"]}
         />
         <SectorPillar
-          index="03" name="ISP's" icon={Wifi} accent="#00B8B8"
+          index="03" name="Wholesale" icon={Wifi} accent="#00B8B8"
           bullets={["Residential coverage (from city to remote locations)", "Wholesale connectivity needs", "Importance of partnerships"]}
         />
         <SectorPillar
