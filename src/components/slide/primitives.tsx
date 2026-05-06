@@ -1,50 +1,42 @@
 import type { CSSProperties, ReactNode } from "react";
+import acronymMark from "@/assets/acronym-mark.png";
+import acronymWordmark from "@/assets/acronym-wordmark.png";
 
-/* ─── A-Mark (currentColor) ─────────────────────────────────────────────── */
+/* ─── A-Mark (brand PNG) ────────────────────────────────────────────────── */
 export function AMark({ className = "", style = {} }: { className?: string; style?: CSSProperties }) {
   return (
-    <svg viewBox="0 0 100 90" className={className} style={style} aria-hidden="true">
-      <g fill="none" stroke="currentColor" strokeWidth="9" strokeLinejoin="round" strokeLinecap="round">
-        <path d="M5 82 L42 8 L78 82" />
-        <path d="M22 56 L62 56" />
-        <path d="M22 82 L52 22 L82 82" />
-        <path d="M37 60 L72 60" />
-        <path d="M40 82 L62 38 L88 82" />
-      </g>
-    </svg>
+    <img
+      src={acronymMark}
+      alt="Acronym"
+      className={className}
+      style={{ objectFit: "contain", ...style }}
+      draggable={false}
+    />
   );
 }
 
 /* Gradient-filled mark — ceremonial only (cover wordmark) */
-export function AMarkGradient({ className = "" }: { className?: string }) {
+export function AMarkGradient({ className = "", style = {} }: { className?: string; style?: CSSProperties }) {
   return (
-    <svg viewBox="0 0 100 90" className={className} aria-hidden="true">
-      <defs>
-        <linearGradient id="amark-grad" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0%" stopColor="#00E0FF" />
-          <stop offset="32%" stopColor="#5874C9" />
-          <stop offset="50%" stopColor="#7A3F9F" />
-          <stop offset="72%" stopColor="#A86A8C" />
-          <stop offset="100%" stopColor="#CFFF1D" />
-        </linearGradient>
-      </defs>
-      <g fill="none" stroke="url(#amark-grad)" strokeWidth="9" strokeLinejoin="round" strokeLinecap="round">
-        <path d="M5 82 L42 8 L78 82" />
-        <path d="M22 56 L62 56" />
-        <path d="M22 82 L52 22 L82 82" />
-        <path d="M37 60 L72 60" />
-        <path d="M40 82 L62 38 L88 82" />
-      </g>
-    </svg>
+    <img
+      src={acronymMark}
+      alt="Acronym"
+      className={className}
+      style={{ objectFit: "contain", ...style }}
+      draggable={false}
+    />
   );
 }
 
 export function Wordmark({ className = "" }: { className?: string }) {
   return (
-    <div className={`flex items-center gap-4 ${className}`}>
-      <AMarkGradient className="w-[72px] h-[72px]" />
-      <span className="font-display font-bold text-[32px] tracking-[0.18em] text-teal-900">ACRONYM</span>
-    </div>
+    <img
+      src={acronymWordmark}
+      alt="Acronym"
+      className={className}
+      style={{ height: 96, width: "auto", objectFit: "contain" }}
+      draggable={false}
+    />
   );
 }
 
